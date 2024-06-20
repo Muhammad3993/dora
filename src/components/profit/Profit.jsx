@@ -112,7 +112,7 @@ const Profit = () => {
                         margin={{
                             top: 5,
                             right: 50,
-                            left: 50,
+                            left: 70,
                             bottom: 20,
                         }}
                         >
