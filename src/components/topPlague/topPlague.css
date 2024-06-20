@@ -1,0 +1,95 @@
+.topPlague{
+    width: 100%;
+    background: var(--blue-light2);
+    user-select: none;
+}
+
+.topPlague_main{
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid var(--blue-light);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.company_name{
+    width: max-content;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 13.2px;
+    color: var(--blue-light1);
+    white-space: nowrap;
+}
+
+.company_location{
+    width: 106px;
+    height: 16px;
+    display: flex;
+    align-items: center;
+    color: var(--blue-light1);
+    justify-content: center;
+    gap: 5px;
+    white-space: nowrap;
+}
+
+.company_location p{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 13.2px;
+}
+
+.company_location span {
+    position: relative;
+    top: 2px;
+}
+
+.topPlague_main_links{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    overflow: hidden;
+}
+
+.topPlague_main_link{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 13.2px;
+    color: var(--blue-light1);
+    white-space: nowrap;
+}
+
+.topPlague_main_link:hover{
+    text-decoration: underline;
+}
+
+.topPlague_main_link span{
+    position: relative;
+    top: 2px;
+}
+
+.select_language{
+    width: 24px;
+    height: 16px;
+    -webkit-appearance: none; 
+    -moz-appearance: none;     
+    appearance: none;          
+    background: var(--wht);
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 768px) {
+    .topPlague{
+        display: none;
+    }
+}

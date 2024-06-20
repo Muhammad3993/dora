@@ -1,0 +1,330 @@
+.invest{
+    width: 100%;
+}
+
+.invest_main{
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.invest_main_top{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.invest_main_top_left{
+    width: 668px;
+}
+
+.invest_main_top_right{
+    width: 466px;
+}
+
+.invest_title{
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 48.4px;
+    color: var(--black);
+}
+
+.invest_subtitle{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    color: var(--blue-light1);
+    margin-top: 30px;
+}
+
+.invest_text{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: var(--blue-light1);
+}
+
+.invest_btn{
+    display: none;
+}
+
+.invest_main_body{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 150px;
+}
+
+.invest_main_box{
+    width: 33%;
+    height: max-content;
+    background: var(--blue-light2);
+    border-radius: 6px;
+    padding: 0 20px;
+    padding-bottom: 30px;
+    position: relative;
+}
+
+.invest_main_box_img{
+    width: 100%;
+    height: 315px;
+    margin-top: -100px;
+    position: relative;
+}
+
+.invest_main_box_img::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: linear-gradient(180deg, rgba(240, 244, 248, 0) 25%, #F0F4F8 100%);
+}
+
+.invest_main_box_img img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.invest_box_tag{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 15.4px;
+    color: var(--blue-light4);
+}
+
+.invest_box_title{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 26.4px;
+    text-align: left;
+    color: var(--black);
+    margin-top: 15px;
+}
+
+.invest_main_box_statistics{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.invest_main_box_statistic_text{
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 39.6px;
+    color: var(--blue);
+}
+
+.invest_main_box_statistic_body{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 15.4px;
+    color: var(--black);
+    margin-top: 10px;
+}
+
+.invest_box_body{
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 22.4px;
+    margin-top: 20px;
+    color: var(--blue-light1);
+}
+
+.invest_main_box_buttons{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    gap: 10px;
+}
+
+.invest_main_box_button{
+    width: 50%;
+    height: 48px;
+    background: var(--blue);
+    color: var(--wht);
+    border-radius: 20px 0 20px 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 15.4px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.invest_main_box_button:nth-child(2){
+    background: var(--wht);
+    color: var(--blue);
+}
+
+@media screen and (max-width: 1120px) {
+    .invest_main_box_img{
+        height: 250px;
+    }
+}
+
+@media screen and (max-width: 935px) {
+    .invest_main_box_statistic_text{
+        font-size: 30px;
+    }
+
+    .invest_main_body{
+        flex-wrap: wrap;
+        gap: 100px;
+    }
+
+    .invest_main_box{
+        width: 44%;
+        flex: 1;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .invest_main_top{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .invest_main_top_right,
+    .invest_main_top_left{
+        width: 100%;
+    }
+
+    .invest_title{
+        font-size: 28px;
+    }
+
+    .invest_subtitle{
+        font-size: 16px;
+        margin-top: 10px;
+    }
+
+    .invest_text{
+        font-size: 12px;
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        transition: .3s all;
+    }
+
+    .invest_btn{
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 18px;
+        display: flex;
+        color: var(--blue-light6);
+        cursor: pointer;
+        margin-top: 15px;
+        border-bottom: 2px solid var(--blue-light6);
+    }
+
+
+    .invest_text_full{
+        -webkit-line-clamp: inherit;
+        transition: .3s all;
+    }
+
+    .invest_main_body{
+        flex-direction: column;
+        gap: 20px;
+        margin-top: 20px;
+    }
+
+    .invest_main_box{
+        width: 100%;
+        display: flex;
+        flex-direction: row-reverse;
+        padding: 0;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 20px;
+    }
+
+    .invest_main_box_button{
+        width: 138px;
+    }
+
+    .invest_main_box_button:nth-child(2){
+        width: 111px;
+    }
+
+    .invest_main_box_img{
+        width: 100%;
+        height: 300px;
+        margin-top: 0;
+        position: absolute;
+        z-index: 0;
+        overflow: hidden;
+    }
+
+    .invest_main_box_img img{
+        height: 100%;
+        position: absolute;
+        right: -300px;
+        bottom: 0;
+    }
+
+    .invest_main_box_img::after{
+        background: none;
+    }
+
+    .invest_main_box_text{
+        width: 100%;
+        z-index: 1;
+        padding-right: 100px;
+    }
+
+    .invest_main_box_text::after{
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        bottom: -1px;
+        background: linear-gradient(180deg, rgba(240, 244, 248, 0) 0%, #F0F4F8 100%);
+        z-index: -1;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .invest_main_box_img img{
+        right: -260px;
+    }
+}
+
+@media screen and (max-width: 610px) {
+    .invest_main_box_img img{
+        right: -220px;
+    }
+
+    .invest_main_box_text{
+        width: 100%;
+        z-index: 1;
+        padding-right: 70px;
+    }
+}
+
+@media screen and (max-width: 524px) {
+    .invest_main_box_img img{
+        right: -190px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .invest_main_box_img img{
+        right: -160px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .invest_main_box_img img{
+        right: -120px;
+    }
+}
