@@ -120,6 +120,11 @@ footer{
     transition: .5s;
 }
 
+.footer_body_row_social span{
+    position: relative;
+    top: 2px;
+}
+
 .footer_body_row_social:hover{
     transform: rotate(-360deg);
     transition: .5s;

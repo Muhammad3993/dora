@@ -61,7 +61,7 @@
     height: 68px;
     border: 1px solid var(--gray-light2);
     border-radius: 10px;
-    padding: 10px;
+    padding: 10px 20px;
     position: relative;
     background: var(--wht);
 }

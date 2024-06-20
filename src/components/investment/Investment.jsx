@@ -73,7 +73,7 @@ const Investment = () => {
                         </div>
                     </div>
                     <div className="invest_main_box">
-                        <div className="invest_main_box_img">
+                        <div className="invest_main_box_img invest_main_box_img1">
                             <img src={img2} alt="" />
                         </div>
                         <div className="invest_main_box_text">

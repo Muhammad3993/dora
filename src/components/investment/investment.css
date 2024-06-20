@@ -75,6 +75,12 @@
     position: relative;
 }
 
+.invest_main_box_img1 img{
+    transform: scale(1.15);
+    position: relative;
+    top: -30px;
+}
+
 .invest_main_box_img::after{
     content: "";
     width: 100%;
